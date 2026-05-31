@@ -340,6 +340,8 @@ footer {
   }
 
   .form input[type="email"] {
+    flex: none;
+    width: 100%;
     max-width: 100%;
   }
 
