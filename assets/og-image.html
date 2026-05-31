@@ -23,11 +23,18 @@
       width: 1200px;
       height: 630px;
       overflow: hidden;
-      background: #44513A;
+      background: #F8F5EF;
       font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, sans-serif;
       display: flex;
       align-items: center;
       justify-content: center;
+    }
+
+    .frame {
+      position: absolute;
+      inset: 0;
+      border: 12px solid #EDE8E1;
+      pointer-events: none;
     }
 
     .content {
@@ -39,8 +46,8 @@
       text-align: center;
     }
 
-    .mark svg {
-      display: block;
+    .mark {
+      filter: drop-shadow(0 2px 8px rgba(60, 60, 40, 0.12));
     }
 
     .wordmark {
@@ -50,22 +57,23 @@
       letter-spacing: -3px;
     }
 
-    .wordmark .ops { color: #EEF2EA; }
-    .wordmark .olive { color: #E07A5F; }
+    .wordmark .ops  { color: #2C2A26; }
+    .wordmark .olive { color: #3E5229; }
 
     .tagline {
       font-size: 34px;
       font-weight: 400;
-      color: #C4CDBA;
+      color: #5A5752;
       letter-spacing: -0.3px;
     }
   </style>
 </head>
 <body>
+  <div class="frame"></div>
   <div class="content">
     <div class="mark">
       <svg width="96" height="96" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
-        <rect x="1" y="1" width="46" height="46" rx="13" fill="#EEF2EA" stroke="#C4CDBA"/>
+        <rect x="1" y="1" width="46" height="46" rx="13" fill="#EEF2EA" stroke="#C8D4C0"/>
         <ellipse cx="31" cy="14" rx="7.5" ry="4" transform="rotate(42 31 14)" fill="#5F7350"/>
         <ellipse cx="23" cy="27" rx="10.5" ry="13.5" transform="rotate(-16 23 27)" fill="#44513A"/>
         <circle cx="23" cy="27" r="3.6" fill="#E07A5F"/>
