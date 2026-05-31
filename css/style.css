@@ -137,6 +137,13 @@ a:hover {
   color: var(--brand-600);
 }
 
+a:focus-visible,
+.brand-link:focus-visible {
+  outline: none;
+  box-shadow: var(--focus-ring);
+  border-radius: var(--radius-sm);
+}
+
 /* ------------------------------------------------------------
    3. Layout
    ------------------------------------------------------------ */
@@ -165,7 +172,7 @@ header {
 }
 
 .brand-link .olive {
-  color: var(--brand-700);
+  color: var(--accent-600);
 }
 
 /* ------------------------------------------------------------
@@ -216,11 +223,12 @@ section.hero {
 .form input[type="email"]:focus {
   border-color: var(--brand-400);
   box-shadow: var(--focus-ring);
+  transition: border-color var(--dur-fast) var(--ease-out), box-shadow var(--dur-fast) var(--ease-out);
 }
 
 .form button {
   padding: var(--sp-3) var(--sp-6);
-  background: var(--brand-500);
+  background: var(--brand-600);
   color: white;
   font-family: var(--font-sans);
   font-size: var(--text-md);
@@ -296,7 +304,7 @@ section.hero {
 footer {
   padding: var(--sp-8) 0 var(--sp-10);
   text-align: center;
-  color: var(--fg-3);
+  color: var(--fg-2);
   font-size: var(--text-sm);
   border-top: 1px solid var(--line-1);
 }
