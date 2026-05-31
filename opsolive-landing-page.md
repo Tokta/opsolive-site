@@ -215,7 +215,7 @@ Key behaviors:
 
 ---
 
-## Step 6 — Deploy to GitHub Pages
+## [DONE] Step 6 — Deploy to GitHub Pages
 
 1. Push the repo to GitHub
 2. Settings → Pages → Source: "Deploy from a branch" → `main` / `/ (root)`
@@ -225,7 +225,7 @@ Key behaviors:
 
 ---
 
-## Step 7 — Configure custom domain
+## [DONE] Step 7 — Configure custom domain
 
 1. Add a `CNAME` file to repo root containing the bare domain (e.g. `opsolive.com`)
 2. At your DNS provider, add:
