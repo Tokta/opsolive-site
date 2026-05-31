@@ -3,10 +3,85 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>OpsOlive</title>
+  <title>OpsOlive — The oil that keeps your operations running.</title>
+  <meta name="description" content="OpsOlive gives ops teams the tools to manage data, run workflows, and automate the rest — without touching code.">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="OpsOlive — The oil that keeps your operations running.">
+  <meta property="og:description" content="OpsOlive gives ops teams the tools to manage data, run workflows, and automate the rest — without touching code.">
+  <meta property="og:image" content="assets/og-image.png">
+  <meta property="og:url" content="https://opsolive.com">
+  <meta property="og:type" content="website">
+
   <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;800&display=swap" rel="stylesheet">
+
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
+  <header>
+    <div class="container">
+      <a href="/" class="brand-link" aria-label="OpsOlive home">
+        <svg width="32" height="32" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="OpsOlive mark">
+          <rect x="1" y="1" width="46" height="46" rx="13" fill="#EEF2EA" stroke="#DCE3D6"></rect>
+          <ellipse cx="31" cy="14" rx="7.5" ry="4" transform="rotate(42 31 14)" fill="#5F7350"></ellipse>
+          <ellipse cx="23" cy="27" rx="10.5" ry="13.5" transform="rotate(-16 23 27)" fill="#44513A"></ellipse>
+          <circle cx="23" cy="27" r="3.6" fill="#E07A5F"></circle>
+        </svg>
+        <span>Ops<span class="olive">Olive</span></span>
+      </a>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container">
+        <h1>The oil that keeps your<br>operations running.</h1>
+        <p class="hero-sub">Stop wrangling spreadsheets. OpsOlive gives ops teams the tools they need to manage data, run workflows, and automate the rest — without touching code.</p>
+
+        <form id="waitlist-form" class="form" novalidate>
+          <label for="email" class="sr-only">Email address</label>
+          <input type="email" id="email" name="email" placeholder="you@company.com" required autocomplete="email">
+          <button type="submit">Join the waiting list</button>
+        </form>
+        <p id="success-msg" class="success-msg" hidden>
+          You're on the list. We'll be in touch.
+        </p>
+      </div>
+    </section>
+
+    <section class="features" aria-label="Features">
+      <div class="container">
+        <div class="features-grid">
+          <div class="feature-card">
+            <h3>Single source of truth</h3>
+            <p>All your operational data in one place, always up to date — accessible to everyone who needs it, from any tool you build.</p>
+          </div>
+          <div class="feature-card">
+            <h3>Run your processes, not your inbox</h3>
+            <p>Turn the workflows your team describes out loud into real tools — without asking a developer to translate.</p>
+          </div>
+          <div class="feature-card">
+            <h3>Automate what shouldn't need you</h3>
+            <p>The repetitive tasks that eat your week? Let OpsOlive handle them. You handle the decisions.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">
+      <p>&copy; 2026 OpsOlive. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script>
+    // form handler placeholder — Step 5
+  </script>
 </body>
 </html>

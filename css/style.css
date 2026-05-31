@@ -270,8 +270,25 @@ section.hero {
 /* ------------------------------------------------------------
    8. Features Grid
    ------------------------------------------------------------ */
+
+/* Visually hidden but accessible to screen readers */
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0,0,0,0);
+  white-space: nowrap;
+  border: 0;
+}
+
 .features {
   padding: var(--sp-12) 0;
+}
+
+.features-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: var(--sp-6);
@@ -326,7 +343,7 @@ footer {
     max-width: 100%;
   }
 
-  .features {
+  .features-grid {
     grid-template-columns: 1fr;
   }
 }
