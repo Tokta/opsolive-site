@@ -3,37 +3,31 @@
        --headless=new --screenshot=assets/og-image.png \
        --window-size=1200,630 --hide-scrollbars --force-device-scale-factor=1 \
        "file://$PWD/assets/og-image.html"
-     Requires internet access for Plus Jakarta Sans (Google Fonts). -->
+     Fonts are self-hosted — no internet connection required. -->
 <!DOCTYPE html>
 <html style="margin:0;padding:0;width:1200px;height:630px">
 <head>
   <meta charset="UTF-8">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;800&display=swap" rel="stylesheet">
   <style>
-    * { box-sizing: border-box; }
+    @font-face {
+      font-family: 'Plus Jakarta Sans';
+      font-style: normal;
+      font-weight: 100 900;
+      font-display: block;
+      src: url('fonts/PlusJakartaSans-400.woff2') format('woff2');
+    }
+
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+
     body {
-      margin: 0;
-      padding: 0;
       width: 1200px;
       height: 630px;
       overflow: hidden;
-      background: oklch(0.985 0.005 65);
-      font-family: 'Plus Jakarta Sans', sans-serif;
+      background: #44513A;
+      font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, sans-serif;
       display: flex;
       align-items: center;
       justify-content: center;
-    }
-
-    .frame {
-      width: 1200px;
-      height: 630px;
-      position: absolute;
-      top: 0;
-      left: 0;
-      border: 12px solid oklch(0.94 0.008 75);
-      pointer-events: none;
     }
 
     .content {
@@ -41,46 +35,37 @@
       flex-direction: column;
       align-items: center;
       justify-content: center;
-      gap: 24px;
+      gap: 28px;
       text-align: center;
     }
 
-    .mark {
-      display: flex;
-      align-items: center;
-      justify-content: center;
+    .mark svg {
+      display: block;
     }
 
     .wordmark {
-      font-size: 80px;
+      font-size: 104px;
       font-weight: 800;
       line-height: 1;
-      letter-spacing: -2px;
+      letter-spacing: -3px;
     }
 
-    .wordmark .ops {
-      color: oklch(0.22 0.018 80);
-    }
-
-    .wordmark .olive {
-      color: oklch(0.38 0.068 142);
-    }
+    .wordmark .ops { color: #EEF2EA; }
+    .wordmark .olive { color: #E07A5F; }
 
     .tagline {
-      font-size: 28px;
+      font-size: 34px;
       font-weight: 400;
-      color: oklch(0.44 0.011 80);
-      margin-top: 4px;
+      color: #C4CDBA;
       letter-spacing: -0.3px;
     }
   </style>
 </head>
 <body>
-  <div class="frame"></div>
   <div class="content">
     <div class="mark">
-      <svg width="120" height="120" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
-        <rect x="1" y="1" width="46" height="46" rx="13" fill="#EEF2EA" stroke="#DCE3D6"/>
+      <svg width="96" height="96" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <rect x="1" y="1" width="46" height="46" rx="13" fill="#EEF2EA" stroke="#C4CDBA"/>
         <ellipse cx="31" cy="14" rx="7.5" ry="4" transform="rotate(42 31 14)" fill="#5F7350"/>
         <ellipse cx="23" cy="27" rx="10.5" ry="13.5" transform="rotate(-16 23 27)" fill="#44513A"/>
         <circle cx="23" cy="27" r="3.6" fill="#E07A5F"/>
