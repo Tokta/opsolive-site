@@ -244,7 +244,7 @@ Key behaviors:
 
 ---
 
-## Step 8 — Create OG image
+## [DONE] Step 8 — Create OG image
 
 Create a 1200x630 PNG for social sharing:
 - Warm cream background (bg-2)
